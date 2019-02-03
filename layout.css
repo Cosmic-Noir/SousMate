@@ -1,0 +1,230 @@
+/* CSS layout for Sous Mate page Revature Project. */
+
+/* latin */
+@font-face {
+    font-family: 'Bree Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Bree Serif Regular'), local('BreeSerif-Regular'), url(https://fonts.gstatic.com/s/breeserif/v7/4UaHrEJCrhhnVA3DgluA96rp5w.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+* {
+  margin: 0 auto;
+}
+a {
+    padding: 20px 20px;
+    text-decoration: none;
+}
+body {
+    font-family: 'Bree Serif';
+}
+button:hover {
+    background: red;
+}
+h3 {
+    margin: 10px 50px;
+}
+h4 {
+    margin: 10px 10px;
+}
+label {
+    float: left;
+}
+main {
+    background: url(pics/donuts1.jpg);
+    background-attachment: fixed;
+    margin: 0 auto;
+    position: fixed:
+   
+}
+nav {
+    background: white;
+    border: 2px solid black;
+    clear: both;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+}
+nav a {
+    color: hsl(0, 0%, 100%);
+    text-shadow: 1px 1px 1px red;
+}
+nav a:hover {
+    color: red;
+    text-shadow: 1px 1px 1px grey;
+}
+
+
+/* Class - alphabetized */
+.cupcakes {
+    border: 2px solid black;
+    height: 120px;
+    width: 120px;
+}
+.displayRecipe {
+    background: hsla(220, 50%, 50%, .9);
+    border: 2px solid black;
+    height: 250px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 550px;
+}
+.featured {
+    background: hsla(220, 50%, 50%, .9);
+    border: 2px solid black;
+    height: 250px;
+    padding-left: 20px;
+    width: 100%;
+}
+.featuredRecipes {
+    background: hsla(220, 50%, 50%, .9);
+    border: 2px solid black;
+    height: 250px;
+    text-align: center;
+    width: 400px;
+}
+.featuredRecipes a {
+    color: black;
+}
+.featuredRecipes a:hover {
+    color: white;
+    text-shadow: 1px 1px 1px red;
+}
+.featuredRecipes li {
+    padding: 10px;
+}
+.featured h2 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 5px red;
+}
+.featuredRecipes h2 {
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 5px red;
+}
+.footer {
+    background: hsla(220, 50%, 50%, .8);
+    border: 2px solid black;
+    color: white;
+    height: 200px;
+    text-align: center;
+    text-shadow: 2px 1px 1px red;
+    vertical-align: center;
+}
+.headline {
+    background: hsla(220, 50%, 50%, .8);
+    border: 2px solid black;
+    clear: both;
+    float: right;
+    margin: 10px 10px;
+    text-align: center;
+    width: 300px;
+}
+.paragraphs {   
+    margin: 10px auto;
+    padding: 20px;
+    width: 700px;
+}
+.nav-list li {
+    background: hsl(220, 50%, 50%);
+    border: 2px solid black;
+    display: inline-block;
+    line-height: 3;
+    margin-left: 20px;
+    margin-top: 25px;
+    text-align: center;
+    width: 100px; 
+  }
+.nav-list li:hover {
+    background-color: white;
+}
+.nav ul li a {
+    text-align: center;
+    height: 20px;
+}
+.news {
+    background-image: url("pics/cupcakes1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid black;
+    height: 300px;
+    text-align: right;
+    width: 100%;
+}
+.recipeList {
+   list-style-type: none;
+}
+.small {
+    background: hsla(220, 50%, 50%, .9);
+    border: 2px solid black;
+    height: 320px;
+    padding: 30px;
+    text-align: center;
+    width: 190px;
+}
+.spacer {
+    height: 100px;
+    width: 100%;
+}
+
+.subscribe {
+    align: center;
+    height: 300px;
+    width: 100%;
+    text-shadow: 1px 1px 3px red;
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+.subscribe h3 {
+    color: white;
+    font-size: 40px;
+}
+
+
+
+/* ID - alphabetized */
+#cake {
+    border: 2px solid black;
+    float: left;
+    height: 200px;
+    margin: 20px 20px;
+    width: 200px;
+}    
+#expectations {
+    color: white;
+    text-shadow: 1px 1px 1px purple;
+}
+#google {
+    padding: 0;
+}
+#logo {
+    background: white;
+    float: left;
+    height: 100px;
+    width: 150px;
+}
+#red {
+    color: white;
+    text-shadow: 1px 1px 1px red;
+}
+#sousMate {
+    color: white;
+    font-size: 130px;
+    line-height: 3;
+    text-shadow: 2px 2px 1px red;
+    text-align: center;
+    vertical-align: top;    
+}
+#sub {
+    color: white;
+    position: relative;
+    text-shadow: 2px 2px 1px red;
+    text-align: center;
+    top: 0px;
+    vertical-align: top;
+    z-index: 1;
+}
