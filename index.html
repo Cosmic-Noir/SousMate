@@ -9,29 +9,27 @@
         <nav>
             <img id="logo" src="pics/cupcake4.jpg">
             <ul class="nav-list">
-                <li><a href="www.google.com">Home</a></li>
-                <li><a href="www.google.com">About</a></li>
-                <li><a href="www.google.com">Recipes</a></li>
-                <li><a href="www.google.com">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <div class="spacer"></div>
         <main>
-            <h1 id="sousMate">SousMate</h1>
+            <h1 id="sousMate"><a href="index.html">SousMate</a></h1>
             <h2 id="sub">A Decadent Recipe Experience</h2>
             <br>
             <div class="featured">
-                    <img src="pics/cake1.jpg" id="cake">
+                    <img src="pics/cake1.jpg" id="featuredPic">
                     <br>
-                    <h2>Blood Orange & Vanilla Tart Cake</h2>
+                    <h2 id="recipeTitle"></h2>
                     <br>
-                    <p>A great winter weddding cake! This tart and sweet cake will
-                        set your taste buds soaring with delicate flavor. 
-                    </p>
+                    <h5 id="prep"></h5>
                     <br>
-                    <p id="expectations">Total Time: 2hrs. Prep Time: 1hr 20min.</p>
+                    <p id="Description"></p>
                     <br>
-                    <button type="button">Go to Reipce!</button>      
+                    <button onclick="location.href='recipes.html'" type="button">Go to Reipce!</button>      
             </div>
             <div class="table">
                 <table class="paragraphs">
@@ -75,15 +73,19 @@
                 <div class="headline">
                     <h3>You can now subscribe to our site and have recipes sent to you daily!</h3>
                 </div>
-            </div>
+                
+            </div> <!-- CUT FROM AFTER THIS DIV-->
             <div class="subscribe">
-                <h3>Get New Recipes Daily</h3>
-                <form>
-                    <input type="email" name="email" id="email" value="Email address">
-                    <input type="submit" value="Subscribe Today!">
-                </form>
-                <br><br>
-            </div>
+                    <h3>Get New Recipes Daily</h3>
+                    <form>
+                        <input type="email" name="email" id="email" value="Email address">
+                        <input type="submit" value="Subscribe Today!">
+                    </form>
+                    <br><br>
+                </div>
+
+
+
         </main>  
         <footer class="footer">
             <br><br><br>
@@ -94,4 +96,5 @@
         </footer>
        
     </body>
+    <script src="IndexJavaScript.js"></script>
 </html>

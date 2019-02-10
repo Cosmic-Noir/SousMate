@@ -16,6 +16,9 @@ a {
     padding: 20px 20px;
     text-decoration: none;
 }
+a:visited {
+    color: inherit;
+}
 body {
     font-family: 'Bree Serif';
 }
@@ -57,18 +60,51 @@ nav a:hover {
 
 
 /* Class - alphabetized */
+.about {
+    color: hsla(210, 50%, 90%, 1.0);
+    border: 2px solid black;
+    border-radius: 40px;
+    background: hsla(220, 50%, 50%, .9);
+    margin: 20px auto;
+    padding: 10px 10px;
+    text-align: center;
+    width: 600px;
+}
+.contact {
+    background-image: url("pics/contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid black;
+    height: 300px;
+    text-align: right;
+    width: 100%;
+}
+.contactInfo {
+    color: hsla(210, 50%, 90%, 1.0);
+    border: 2px solid black;
+    border-radius: 40px;
+    background: hsla(220, 50%, 50%, .9);
+    margin: 20px auto;
+    text-align: center;
+    width: 500px;
+}
+.container {
+    align-content: center;
+    background: hsla(220, 50%, 50%, .9);
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px;
+    margin: 15px auto;
+    padding: 25px;
+    width: 550px;
+}
 .cupcakes {
     border: 2px solid black;
     height: 120px;
     width: 120px;
 }
-.displayRecipe {
-    background: hsla(220, 50%, 50%, .9);
-    border: 2px solid black;
-    height: 250px;
-    margin: 20px auto;
-    padding: 20px;
-    width: 550px;
+.description {
+    padding: 10px;
 }
 .featured {
     background: hsla(220, 50%, 50%, .9);
@@ -77,10 +113,15 @@ nav a:hover {
     padding-left: 20px;
     width: 100%;
 }
+.featured h2 {
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 5px red;
+}
 .featuredRecipes {
     background: hsla(220, 50%, 50%, .9);
     border: 2px solid black;
-    height: 250px;
+    height: 350px;
     text-align: center;
     width: 400px;
 }
@@ -92,14 +133,11 @@ nav a:hover {
     text-shadow: 1px 1px 1px red;
 }
 .featuredRecipes li {
-    padding: 10px;
-}
-.featured h2 {
-    color: white;
-    font-size: 30px;
     text-align: center;
-    text-shadow: 2px 2px 5px red;
+    padding: 10px;
+    list-style-type: none;
 }
+
 .featuredRecipes h2 {
     color: white;
     font-size: 30px;
@@ -113,6 +151,12 @@ nav a:hover {
     text-align: center;
     text-shadow: 2px 1px 1px red;
     vertical-align: center;
+}
+.ingrediants {
+    padding-bottom: 10px;
+}
+.instructions li {
+    padding: 3px;
 }
 .headline {
     background: hsla(220, 50%, 50%, .8);
@@ -128,9 +172,22 @@ nav a:hover {
     padding: 20px;
     width: 700px;
 }
-.nav-list li {
+.prepTime /* If i remove this, li changed... */
+.nav-list {
     background: hsl(220, 50%, 50%);
     border: 2px solid black;
+    display: inline-block;
+    line-height: 3;
+    margin-left: 20px;
+    margin-top: 25px;
+    text-align: center;
+    width: 100px; 
+  }
+.nav-list li { /* for some reason requiring both this and .nav-list */
+    background: hsl(220, 50%, 50%);
+    color: white;
+    border: 2px solid black;
+    border-radius: 40px;
     display: inline-block;
     line-height: 3;
     margin-left: 20px;
@@ -154,8 +211,21 @@ nav a:hover {
     text-align: right;
     width: 100%;
 }
+.recipeContainer {
+    height: 2330px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 550px;
+}
 .recipeList {
    list-style-type: none;
+}
+.recipePic {
+    border: 2px solid black;
+    border-radius: 80px;
+    height: 200px;
+    width: 200px;
+    float: right;
 }
 .small {
     background: hsla(220, 50%, 50%, .9);
@@ -174,7 +244,7 @@ nav a:hover {
     align: center;
     height: 300px;
     width: 100%;
-    text-shadow: 1px 1px 3px red;
+    text-shadow: 2px 2px 3px black;
     text-align: center;
     position: relative;
     top: 100px;
@@ -183,21 +253,47 @@ nav a:hover {
     color: white;
     font-size: 40px;
 }
+.thankYou {
+    color: hsla(210, 50%, 90%, 1.0);
+    border: 2px solid black;
+    border-radius: 40px;
+    background: hsla(220, 50%, 50%, .9);
+    margin: 20px auto;
+    text-align: center;
+    width: 500px;
+}
+.title {
+    color: white;
+    padding: 10px;
+    text-shadow: 1px 1px 3px red;
+    text-decoration: none;
+}
 
 
 
 /* ID - alphabetized */
-#cake {
+#aboutContact {
+    padding: 0px;
+}
+#contactPic {
+    align-content: center;
     border: 2px solid black;
-    float: left;
-    height: 200px;
-    margin: 20px 20px;
-    width: 200px;
-}    
+    height: 400px;
+    margin: 0px auto;
+    width: 100%;
+}
 #expectations {
     color: white;
     text-shadow: 1px 1px 1px purple;
 }
+#featuredPic {
+    border: 2px solid black;
+    border-radius: 80px;
+    float: left;
+    height: 200px;
+    margin: 20px 20px;
+    width: 200px;
+}  
 #google {
     padding: 0;
 }
@@ -207,6 +303,13 @@ nav a:hover {
     height: 100px;
     width: 150px;
 }
+#recipePic1 {
+    border: 2px solid black;
+    border-radius: 145px;
+    height: 200px;
+    width: 300px;
+    float: right;
+}
 #red {
     color: white;
     text-shadow: 1px 1px 1px red;
@@ -214,10 +317,14 @@ nav a:hover {
 #sousMate {
     color: white;
     font-size: 130px;
-    line-height: 3;
+    line-height: 2;
     text-shadow: 2px 2px 1px red;
     text-align: center;
     vertical-align: top;    
+}
+#sousMate:hover {
+    color: purple;
+    text-shadow: 2px 2px 1px white;
 }
 #sub {
     color: white;

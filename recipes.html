@@ -9,38 +9,78 @@
         <nav>
             <img id="logo" src="pics/cupcake4.jpg">
             <ul class="nav-list">
-                <li><a href="www.google.com">Home</a></li>
-                <li><a href="www.google.com">About</a></li>
-                <li><a href="www.google.com">Recipes</a></li>
-                <li><a href="www.google.com">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <div class="spacer"></div>
         <main>
-            <h1 id="sousMate">SousMate</h1>
+            <h1 id="sousMate"><a href="index.html">SousMate</a></h1>
             <h2 id="sub">A Decadent Recipe Experience</h2>
             <br>
             <div class="featuredRecipes">
                     <br>
                     <h2>Featured Recipes:</h2>
                     <br>
-                    <ul class="recipeList">
-                        <li><a href="#">Drop-Dead Donuts</a></li>
-                        <li><a href="#">Curl-Your-Toes Cupcakes</a></li>
-                        <li><a href="#">Kiss-Me-Calories Cupcakes</a></li>
-                    </ul>    
+                    <ul id="recipeList"></ul>
             </div>
 
-            <div class="displayRecipe">
-                <h2 id="recipeTitle"></h2>
-                <h3 id="prepTime"></h3>
-                <ul id="ingrediantsList"></ul>
-                <ol id="recipeInstructions">
-                    <li> test</li>
-                </ol>
-                
-                
+            <div class="recipeContainer">
+                <div class="container">
+                    <img src="pics/deathDonut.jpg" id="recipePic1">
+                    <h2 class="title" id="title1">TEST</h2>
+                    <h4 class="prepTime" id="time1"></h4>
+                    <ol class="ingrediants" id="ingrediants1"></ol>
+                    <br>
+                    <p class="description" id="description1"></p>
+                    <ol class="instructions" id="instructions1"></ol>
+                    <br>
+                </div>
+                <div class="container">
+                    <img src="pics/cupcake5.jpg" class="recipePic">
+                    <h2 class="title" id="title2">TEST</h2>
+                    <h4 class="prepTime" id="time2"></h4>
+                    <ol class="ingrediants" id="ingrediants2"></ol>
+                    <br><br>
+                    <p class="description" id="description2"></p>
+                    <ol class="instructions" id="instructions2"></ol>
+                    <br>
+                </div>
+                    
+                <div class="container">
+                    <img src="pics/cupcake6.jpg" class="recipePic">
+                    <h2 class="title" id="title3">TEST</h2>
+                    <h4 class="prepTime" id="time3"></h4>
+                    <ol class="ingrediants" id="ingrediants3"></ol>
+                    <br><br>
+                    <p class="description" id="description3"></p>
+                    <ol class="instructions" id="instructions3"></ol>
+                    <br>
+                </div>
+                <div class="container">
+                    <img src="pics/donut2.jpg" class="recipePic">
+                    <h2 class="title" id="title4">TEST</h2>
+                    <h4 class="prepTime" id="time4"></h4>
+                    <ol class="ingrediants" id="ingrediants4"></ol>
+                    <br><br>
+                    <p class="description" id="description4"></p>
+                    <ol class="instructions" id="instructions4"></ol>
+                    <br>
+                </div>
+                <div class="container">
+                    <img src="pics/cupcake7.jpg" class="recipePic">
+                    <h2 class="title" id="title5">TEST</h2>
+                    <h4 class="prepTime" id="time5"></h4>
+                    <ol class="ingrediants" id="ingrediants5"></ol>
+                    <br><br>
+                    <p class="description" id="description5"></p>
+                    <ol class="instructions" id="instructions5"></ol>
+                    <br>
+                </div>
             </div>
+
             <div class="news">
                 <div class="headline">           
                     <h2>WONDERFUL NEWS!</h2>
@@ -67,6 +107,6 @@
             <h3>&copy; 2020.</h3>
         </footer>
     </body>
-    <script src="functions.js"></script>
+    <script src="RecipeJavaScript.js"></script>
     
 </html>
