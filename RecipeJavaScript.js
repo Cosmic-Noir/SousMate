@@ -3,7 +3,7 @@
 var recipes = {
     'Drop-Dead Donuts': {
         title: "Drop-Dead Donuts",
-        prepTime: "1 Hour",
+        prepTime: 1,
         ingrediants: ["Flour", "milk", "eggs", "sugar"],
         instructions: ["Mix wet stuff", "Add dry stuff", "bake", "Enjoy!"],
         linkTitle: '<a href="#title1">Drop-Dead Donuts</a>',
@@ -12,7 +12,7 @@ var recipes = {
     },
     'Curl-Your-Toes Cupcakes': {
         title: "Curl-Your-Toes Cupcakes",
-        prepTime: "2 Hours",
+        prepTime: 2,
         ingrediants: ["Love", "sprinkles", "magic"],
         instructions: ["Sir thoroughly", "Bake", "Eat!"],
         linkTitle: '<a href="#title2">Curl-Your-Toes Cupcakes</a>',
@@ -22,7 +22,7 @@ var recipes = {
     },
     'Kiss-Me-Calories Cupcakes': {
         title: "Kiss-Me-Calories Cupcakes",
-        prepTime: "20 Minutes",
+        prepTime: 0.5,
         ingrediants: ["Kisses", "calories", "crunchies"],
         instructions: ["Stir all together", "Bake", "Feast!"],
         linkTitle: '<a href="#title3">Kiss-Me-Calories Cupcakes</a>',
@@ -31,7 +31,7 @@ var recipes = {
     },
     'Pebble-Crusted Perfection': {
         title: "Pebble-Crusted Perfection",
-        prepTime: "3 Hours",
+        prepTime: 3,
         ingrediants: ["Fruity Peppbles", "eggs", "frosting"],
         instructions: ["Shaken, not stirred.", "Roast", "Devour!"],
         linkTitle: '<a href="#title4">Pebble-Cursted Perfection</a>',
@@ -40,7 +40,7 @@ var recipes = {
     },
     'Dangerous Delight Cupcakes': {
         title: "Dangerous Delight Cupcakes",
-        prepTime: "3 Days",
+        prepTime: 24,
         ingrediants: ["Danger", "Dellight", "Deliciousness"],
         instructions: ["Slosh into bowl", "Broil", "Try to choke down"],
         linkTitle: '<a href="#title5">Dangerous Delight Cupcakes</a>',
@@ -112,19 +112,19 @@ let timeArray = [recipes['Drop-Dead Donuts'].prepTime,
     recipes['Dangerous Delight Cupcakes'].prepTime];
 
     let time1 = document.getElementById("time1");
-    time1.innerHTML = timeArray[0];
+    time1.innerHTML = timeArray[0] + " Hour";
 
     let time2 = document.getElementById("time2");
-    time2.innerHTML = timeArray[1];
+    time2.innerHTML = timeArray[1] + " Hours";
 
     let time3 = document.getElementById("time3");
-    time3.innerHTML = timeArray[2];
+    time3.innerHTML = timeArray[2] + " Hours";
 
     let time4 = document.getElementById("time4");
-    time4.innerHTML = timeArray[3];
+    time4.innerHTML = timeArray[3] + " Hours";
 
     let time5 = document.getElementById("time5");
-    time5.innerHTML = timeArray[4];
+    time5.innerHTML = timeArray[4] + " Hours";
 
 /* Ingrediants adding to ol. */
 
@@ -263,11 +263,102 @@ recipes['Dangerous Delight Cupcakes'].pic];
 
 console.log(picArray); // Verifies creates correct array.
 
-/* Could dynically populate with setting attribute of image
-in each section... Not sure if this is more efficient. */
+/* Attempted to dynamically populate the photo and set the created image 
+with a class that was then set in CSS, also attempted creating
+the images and setting their float property to float right with
+the setAttribute feature - didn't work.  */
 
 
 
 
 
+/* Creating timer, starting at higher count and going down 
+one second each. */
+
+
+// Creates an array of each timer class element
+let timerArray = document.getElementsByClassName("timer");
+
+console.log(timerArray); 
+// displays each element, but unclear if we can use this to append each one.  
+
+// Create new array of seconds based on hourly listed in timeArray.
+let secondsArray = timeArray.map(number => {
+    return number * 60 * 60;
+})
+
+console.log(secondsArray); // shows timeArray converted to seconds.
+
+// Use seconds array to set innerHTML of each individual ID. 
+
+let timer1 = document.getElementById("timer1");
+timer1.innerHTML = secondsArray[0];
+
+let timer2 = document.getElementById("timer2");
+timer2.innerHTML = secondsArray[1];
+
+let timer3 = document.getElementById("timer3");
+timer3.innerHTML = secondsArray[2];
+
+let timer4 = document.getElementById("timer4");
+timer4.innerHTML = secondsArray[3];
+
+let timer5 = document.getElementById("timer5");
+timer5.innerHTML = secondsArray[4];
+
+console.log(timerArray);
+
+/* Unclear if I can use .appendChild() Method on an array
+element. Perhaps the element in the array is not allowed 
+because it's not really an element, displays:
+
+timerArray =
+[h5#timer1.timer, h5#timer2.timer, h5#timer3.timer, h5#timer4.timer, 
+h5#timer5.timer, timer1: h5#timer1.timer, timer2: h5#timer2.timer, 
+timer3: h5#timer3.timer, timer4: h5#timer4.timer, timer5: h5#timer5.timer]
+
+
+Tried: 
+
+function append() {
+    for (let i = 0; i < timerArray.length; i++) {
+        let sec = secondsArray[i];
+        timerArray[i].appendChild(sec);
+    }
+}
+
+Or could we simply make an array of the id names, and then insert that
+into the .getElementById() method?
+
+let idArray = ["timer1", "timer2", "timer3", "timer4", "timer5"];
+
+function append2() {
+    for (let i = 0; i < idArray.length; i++) {
+        let i = document.getElementById(idArray[i]);   Do we need quotes in the parenthese? Also 
+        let sec = secondsArray[i]                       don't think I can declare i again, but unclear 
+        i.appendChild(sec);                                 if I should do another for loop to rename variable? 
+    }
+}
+*/
+
+/* Need button click to start countdown of each value. */
+
+// test - works
+
+
+
+
+// Unclear how to iterate and change each element with one function.  
+// Drop-Dead Donuts
+let interval = setInterval(counter1, 1000);
+let count1 = secondsArray[0];
+function counter1 () {
+   let time = document.getElementById("timer1");
+   time.innerHTML = count1;
+   count1--;
+    
+};
+
+let timeStart1 = document.getElementById("start1");
+timeStart1.addEventListener("click", interval);
 

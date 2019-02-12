@@ -239,7 +239,11 @@ nav a:hover {
     height: 100px;
     width: 100%;
 }
-
+.start {
+    clear: both;
+    float: right;
+    margin: 10px 10px;
+}
 .subscribe {
     align: center;
     height: 300px;
@@ -261,6 +265,12 @@ nav a:hover {
     margin: 20px auto;
     text-align: center;
     width: 500px;
+}
+.timer {
+    border: 1px solid black;
+    float: right;
+    margin: 10px 10px;
+    padding: 10px;
 }
 .title {
     color: white;
