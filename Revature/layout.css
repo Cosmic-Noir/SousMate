@@ -1,0 +1,371 @@
+/* CSS layout for Sous Mate page Revature Project. */
+
+/* latin - Bree Serif font family */
+@font-face {
+    font-family: 'Bree Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Bree Serif Regular'), local('BreeSerif-Regular'), url(https://fonts.gstatic.com/s/breeserif/v7/4UaHrEJCrhhnVA3DgluA96rp5w.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+/* Reset margins for all */
+* {
+  margin: 0 auto;
+}
+
+/* Styalized Elements - Alphabetized */
+a {
+    padding: 20px 20px;
+    text-decoration: none;
+}
+a:visited {
+    color: inherit;
+}
+body {
+    font-family: 'Bree Serif';
+}
+button:hover {
+    background: red;
+}
+h3 {
+    margin: 10px 50px;
+}
+h4 {
+    margin: 10px 10px;
+}
+main {
+    background: url(pics/donuts1.jpg);
+    background-attachment: fixed;
+    margin: 0 auto;   
+}
+nav {
+    font-family: 'Bree Serif';
+    background: white;
+    border: 2px solid black;
+    clear: both;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+}
+nav a {
+    color: hsl(0, 0%, 100%);
+    text-shadow: 1px 1px 1px red;
+    padding: 0px;
+}
+nav a:hover {
+    color: red;
+    text-shadow: 1px 1px 1px grey;
+}
+
+/* Classwa - alphabetized */
+.about {
+    color: hsla(210, 50%, 90%, 1.0);
+    border: 2px solid black;
+    border-radius: 40px;
+    background: hsla(220, 50%, 50%, .9);
+    margin: 20px auto;
+    padding: 10px 10px;
+    text-align: center;
+    width: 600px;
+}
+.contact {
+    background-image: url("pics/contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid black;
+    height: 300px;
+    text-align: right;
+    width: 100%;
+}
+.contactForm {
+    color: hsla(210, 50%, 90%, 1.0);
+    border: 2px solid black;
+    border-radius: 40px;
+    background: hsla(220, 50%, 50%, .9);
+    margin: 20px auto;
+    text-align: center;
+    vertical-align: center;
+    width: 500px;
+}
+.contactForm input {
+    float: right;
+    margin: 10px 30px;
+    width: 300px;
+}
+.contactForm label {
+    float: left;
+    margin: 10px;
+    margin-left: 30px;
+    padding-right: 30px;
+}
+.contactInfo {
+    color: hsla(210, 50%, 90%, 1.0);
+    border: 2px solid black;
+    border-radius: 40px;
+    background: hsla(220, 50%, 50%, .9);
+    margin: 20px auto;
+    text-align: center;
+    width: 500px;
+}
+.container {
+    align-content: center;
+    background: hsla(220, 50%, 50%, .9);
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px;
+    margin: 15px auto;
+    padding: 25px;
+    width: 550px;
+}
+.cupcakes {
+    border: 2px solid black;
+    height: 120px;
+    width: 120px;
+}
+.description {
+    padding: 10px;
+}
+.featured {
+    background: hsla(220, 50%, 50%, .9);
+    border: 2px solid black;
+    height: 250px;
+    padding-left: 20px;
+    width: 100%;
+}
+.featured h2 {
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 5px red;
+}
+.featuredRecipes {
+    background: hsla(220, 50%, 50%, .9);
+    border: 2px solid black;
+    height: 350px;
+    text-align: center;
+    width: 400px;
+}
+.featuredRecipes a {
+    color: black;
+}
+.featuredRecipes a:hover {
+    color: white;
+    text-shadow: 1px 1px 1px red;
+}
+.featuredRecipes li {
+    text-align: center;
+    padding: 10px;
+    list-style-type: none;
+}
+.featuredRecipes h2 {
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 5px red;
+}
+.footer {
+    background: hsla(220, 50%, 50%, .8);
+    border: 2px solid black;
+    color: white;
+    height: 200px;
+    text-align: center;
+    text-shadow: 2px 1px 1px red;
+    vertical-align: center;
+}
+.ingrediants {
+    padding-bottom: 10px;
+}
+.instructions li {
+    padding: 3px;
+}
+.headline {
+    background: hsla(220, 50%, 50%, .8);
+    border: 2px solid black;
+    clear: both;
+    float: right;
+    margin: 10px 10px;
+    text-align: center;
+    width: 300px;
+}
+.paragraphs {   
+    margin: 10px auto;
+    padding: 20px;
+    width: 700px;
+}
+.prepTime /* CANNOT remove - ruins my page..? */
+.nav-list {
+    background: hsl(220, 50%, 50%);
+    border: 2px solid black;
+    display: inline-block;
+    line-height: 3;
+    margin-left: 20px;
+    margin-top: 15px;
+    text-align: center;
+    width: 100px; 
+  }
+.nav-list li { /* for some reason requiring both this and .nav-list */
+    background: hsl(220, 50%, 50%);
+    color: white;
+    border: 2px solid black;
+    border-radius: 40px;
+    display: inline-block;
+    line-height: 3;
+    margin-left: 20px;
+    margin-top: 25px;
+    text-align: center;
+    width: 100px; 
+  }
+.nav-list li:hover {
+    background-color: white;
+}
+.nav ul li a {
+    text-align: center;
+    height: 20px;
+}
+.news {
+    background-image: url("pics/cupcakes1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid black;
+    height: 300px;
+    text-align: right;
+    width: 100%;
+}
+.recipeContainer {
+    height: 2330px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 550px;
+}
+.recipeList {
+   list-style-type: none;
+}
+.recipePic {
+    border: 2px solid black;
+    border-radius: 80px;
+    height: 200px;
+    width: 200px;
+    float: right;
+}
+.small {
+    background: hsla(220, 50%, 50%, .9);
+    border: 2px solid black;
+    height: 320px;
+    padding: 30px;
+    text-align: center;
+    width: 190px;
+}
+.spacer {
+    height: 100px;
+    width: 100%;
+}
+.start {
+    clear: both;
+    float: right;
+    margin: 10px 10px;
+}
+.subscribe {
+    align: center;
+    height: 300px;
+    width: 100%;
+    text-shadow: 2px 2px 3px black;
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+.subscribe h3 {
+    color: white;
+    font-size: 40px;
+}
+.thankYou {
+    color: hsla(210, 50%, 90%, 1.0);
+    border: 2px solid black;
+    border-radius: 40px;
+    background: hsla(220, 50%, 50%, .9);
+    margin: 20px auto;
+    text-align: center;
+    width: 500px;
+}
+.timer {
+    border: 1px solid black;
+    float: right;
+    margin: 10px 10px;
+    padding: 10px;
+}
+.title {
+    color: white;
+    padding: 10px;
+    text-shadow: 1px 1px 3px red;
+    text-decoration: none;
+}
+
+/* ID - alphabetized */
+#aboutContact {
+    color: purple;
+    padding: 0px;
+}
+#comment {
+    margin-left: 0px;
+}
+#contactPic {
+    align-content: center;
+    border: 2px solid black;
+    height: 400px;
+    margin: 0px auto;
+    width: 100%;
+}
+#contactSubmit {
+    margin: 15px;
+    width: 450px;
+}
+#expectations {
+    color: white;
+    text-shadow: 1px 1px 1px purple;
+}
+#featuredPic {
+    border: 2px solid black;
+    border-radius: 80px;
+    float: left;
+    height: 200px;
+    margin: 20px 20px;
+    width: 200px;
+}  
+#google {
+    padding: 0;
+}
+#logo {
+    background: white;
+    float: left;
+    height: 100px;
+    width: 150px;
+}
+#recipePic1 {
+    border: 2px solid black;
+    border-radius: 145px;
+    height: 200px;
+    width: 300px;
+    float: right;
+}
+#red {
+    color: white;
+    text-shadow: 1px 1px 1px red;
+}
+#sousMate {
+    color: white;
+    font-size: 130px;
+    line-height: 2;
+    text-shadow: 2px 2px 1px red;
+    text-align: center;
+    vertical-align: top;    
+}
+#sousMate:hover {
+    color: purple;
+    text-shadow: 2px 2px 1px white;
+}
+#sub {
+    color: white;
+    position: relative;
+    text-shadow: 2px 2px 1px red;
+    text-align: center;
+    top: 0px;
+    vertical-align: top;
+    z-index: 1;
+}
